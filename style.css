@@ -1,0 +1,115 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00133f, #000000, #000000);
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #2424240e;
+  backdrop-filter: 30px;
+  border-radius: 40px;
+  box-shadow: 0 6px 10px rgba(100, 97, 255, 0.219);
+  border: 2px solid rgba(255, 255, 255, 0.192);
+  padding: 2rem;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.profile-card:hover {
+  transform: scale(105%);
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+  border: 2px solid #5c2e9160;
+  box-shadow: 0 10px 20px rgba(185, 82, 245, 0.212);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #ffffffcc;
+}
+
+/* Text */
+.profile-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.proffession {
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.profile-bio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+/* Links */
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.socials a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.socials a:hover {
+  color:  #5001aaa1;
+}
+
+/* Button */
+#theme-toggle {
+  background-color: #0c89ff;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+#theme-toggle:hover {
+  background-color: #3b007ea1;
+  border-radius: 0.5rem;
+  transition: ease-in-out 0.3s;
+  color: white;
+}
+
+/* Light Theme */
+.light-mode {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  color: #0f172a;
+}
+
+.light-mode .profile-card {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
