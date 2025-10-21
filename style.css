@@ -116,3 +116,103 @@
    color: rgb(0, 140, 255);
 }
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .profile-card,
+  .glass-bar,
+  .form-card,
+  .card {
+    position: static !important;
+    width: 90% !important;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-block: 2rem;
+  }
+
+
+  .glass-bar {
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+.card.about-card{
+    position: static;
+    width: 50%;
+    max-width: 80%;
+    margin-inline: auto;
+    padding-right: 0;
+}
+  .about-card ul {
+    padding-left: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+
+  .profile-card,
+  .card,
+  .form-card,
+  .about-card {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+
+  #liveTime {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+
+
+  .glass-bar {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+
+  .profile-name {
+    font-size: 1.25rem;
+  }
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
