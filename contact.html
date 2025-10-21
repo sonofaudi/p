@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Stage 1</title>
+  <link rel="stylesheet" href="style.css">   <!-- your stage-0 base -->
+  <link rel="stylesheet" href="css/style01.css">
+</head>
+<body>
+  <header class="glass-bar">
+    <nav>
+      <a href="index.html">Profile</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="card form-card">
+    <h1>Contact Us</h1>
+
+    <form id="contactForm" novalidate data-testid="test-contact-form">
+      <label for="name">Full name</label>
+      <input id="name" placeholder="Elon Musk, Audi"
+             type="text"
+             data-testid="test-contact-name"
+             aria-describedby="errName"
+             required>
+      <span id="errName" class="error" data-testid="test-contact-error-name" role="alert"></span>
+
+      <label for="email">Email</label>
+      <input id="email" placeholder="Elonmusk@gmail.com"
+             type="email"
+             data-testid="test-contact-email"
+             aria-describedby="errEmail"
+             required>
+      <span id="errEmail" class="error" data-testid="test-contact-error-email" role="alert"></span>
+
+      <label for="subject">Subject</label>
+      <input id="subject" placeholder="I Think You're My Nephew"
+             type="text"
+             data-testid="test-contact-subject"
+             aria-describedby="errSubject"
+             required>
+      <span id="errSubject" class="error" data-testid="test-contact-error-subject" role="alert"></span>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Type here, Let's Discuss"
+                rows="5"
+                data-testid="test-contact-message"
+                aria-describedby="errMessage"
+                required></textarea>
+      <span id="errMessage" class="error" data-testid="test-contact-error-message" role="alert"></span>
+
+      <button type="submit" class="glass-btn" data-testid="test-contact-submit">Send Message</button>
+      <p id="successMsg" class="success" data-testid="test-contact-success" role="status"></p>
+      <br>
+      <button id="theme-toggle" data-testid="theme-toggle">Mode</button>
+    </form>
+  </main>
+
+  <script src="js/form.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
