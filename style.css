@@ -45,9 +45,20 @@
 
 .proffession {
   color: #94a3b8;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   font-size: 0.95rem;
 }
+.date{ 
+  color: rgba(255, 255, 255, 0.226); 
+  font-weight: 500; 
+}
+#liveTime{
+  font-size: 1.9rem; 
+  letter-spacing: .2em;
+  font-weight: 800;
+  color: rgba(84, 162, 252, 0.384);
+}
+
 
 .profile-bio {
   font-size: 0.9rem;
