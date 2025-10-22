@@ -14,3 +14,42 @@ body {background: linear-gradient(135deg, #00133f, #000000, #000000);color: #f8f
 .glass-bar-about  {border: 2px solid  rgba(111, 0, 255, 0.466); position: absolute; bottom: 85%;right: 73%; z-index: 10;border-radius: 15px; background: rgba(36, 36, 36, 0.281); backdrop-filter: blur(10px); padding: 1rem 2rem; display: flex; justify-content: center; gap: 2rem; }
 .glass-bar-about a{ color: #fff; text-decoration: none; font-weight: 500; padding: .4rem .8rem; border-radius: 8px; transition: background .2s; }
 .glass-bar-about a:hover, .glass-bar a.active { background: var(--accent); }
+ 
+
+
+
+@media (max-width: 900px) {
+  .about-card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90% !important;
+    max-width: 680px;
+    padding: 2rem;
+  }
+  .bullets {               
+    padding-left: 1.5rem !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .about-card {
+    padding: 1.4rem;
+    border-radius: 16px;
+  }
+  .about-card h1 { font-size: 1.5rem; }
+  .about-card h2 { font-size: 1.1rem; }
+  .about-card p,
+  .about-card li {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .bullets {
+    padding-left: 1.2rem !important;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .about-card { padding: 1rem; }
+}
