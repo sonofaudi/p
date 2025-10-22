@@ -213,7 +213,20 @@
     gap: 0.75rem;
   }
 
-
+.glass-bar-about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    height: fit-content;
+    max-width: 600px;
+    position: relative;
+    top: 3%;
+    position: absolute;
+    left: 10%;
+}
 
   .profile-name {
     font-size: 1.25rem;
