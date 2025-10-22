@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us – Stage 1</title>
-  <link rel="stylesheet" href="style.css">   <!-- your stage-0 base -->
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">   
   <link rel="stylesheet" href="css/style01.css">
+  <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
   <header class="glass-bar">
@@ -22,6 +23,7 @@
     <form id="contactForm" novalidate data-testid="test-contact-form">
       <label for="name">Full name</label>
       <input id="name" placeholder="Elon Musk, Audi"
+          class="input"
              type="text"
              data-testid="test-contact-name"
              aria-describedby="errName"
@@ -30,6 +32,7 @@
 
       <label for="email">Email</label>
       <input id="email" placeholder="Elonmusk@gmail.com"
+          class="input"  
              type="email"
              data-testid="test-contact-email"
              aria-describedby="errEmail"
@@ -38,6 +41,7 @@
 
       <label for="subject">Subject</label>
       <input id="subject" placeholder="I Think You're My Nephew"
+          class="input"
              type="text"
              data-testid="test-contact-subject"
              aria-describedby="errSubject"
@@ -46,6 +50,7 @@
 
       <label for="message">Message</label>
       <textarea id="message" placeholder="Type here, Let's Discuss"
+              class="input"
                 rows="5"
                 data-testid="test-contact-message"
                 aria-describedby="errMessage"

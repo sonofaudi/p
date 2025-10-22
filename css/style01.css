@@ -3,16 +3,14 @@
 .glass-bar  {border: 2px solid  rgba(111, 0, 255, 0.466); position: absolute; bottom: 85%;right: 73%; z-index: 10;border-radius: 15px; background: rgba(36, 36, 36, 0.281); backdrop-filter: blur(10px); padding: 1rem 2rem; display: flex; justify-content: center; gap: 2rem; }
 .glass-bar a{ color: #fff; text-decoration: none; font-weight: 500; padding: .4rem .8rem; border-radius: 8px; transition: background .2s; }
 .glass-bar a:hover, .glass-bar a.active { background: var(--accent); }
-label       { display: block; margin: 1rem 0 .3rem; font-weight: 500; }
-input, textarea { width: 100%; padding: .7rem; border: 1px solid var(--accent); background: transparent; color: inherit; border-radius: 8px; }
-.error     { color: #ff6b6b; font-size: .85rem; margin-top: .2rem; display: block; }
-.success   { color: #51cf66; font-weight: 600; margin-top: 1rem; }
-.glass-btn { width: 100%; margin-top: 1.2rem; padding: .8rem; border: none; border-radius: 8px; background: var(--accent); color: #fff;background-color: rgba(148, 148, 148, 0.13); font-weight: 600; cursor: pointer; transition: transform .2s; }
-.glass-btn:hover { transform: translateY(-2px); }
-.about-card ul { padding-left: 20rem;color: rgb(200, 180, 255); }
-.about-card {margin-top: 1.8rem;margin-left: 30%;border: 3px solid rgba(111, 0, 255, 0.199); background: rgba(36, 36, 36, 0.281); backdrop-filter: blur(10px);}
+.bullets { padding-left: 45%;color: rgb(200, 180, 255); }
+.about-card {border-radius:20px; padding: 20px;margin-right: 20%; margin-top: 6rem; border: 3px solid rgba(111, 0, 255, 0.199);margin-left: 30%; background: rgba(36, 36, 36, 0.281);width: 80%; backdrop-filter: blur(10px);}
 .form-card{position:relative; border:2px solid  rgba(111, 0, 255, 0.199);left: 10%; background: rgba(36, 36, 36, 0.281); backdrop-filter: blur(10px);}
 #input {border: 2px solid white;}
 body {background: linear-gradient(135deg, #00133f, #000000, #000000);color: #f8fafc;min-height: 100vh;}
 .about-page {display: flex;justify-content: center;align-items: center;}
 .about-card p{font-size: 1.2rem; padding:9px;color: #f8fafcab;}
+
+.glass-bar-about  {border: 2px solid  rgba(111, 0, 255, 0.466); position: absolute; bottom: 85%;right: 73%; z-index: 10;border-radius: 15px; background: rgba(36, 36, 36, 0.281); backdrop-filter: blur(10px); padding: 1rem 2rem; display: flex; justify-content: center; gap: 2rem; }
+.glass-bar-about a{ color: #fff; text-decoration: none; font-weight: 500; padding: .4rem .8rem; border-radius: 8px; transition: background .2s; }
+.glass-bar-about a:hover, .glass-bar a.active { background: var(--accent); }

@@ -126,60 +126,66 @@
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .profile-card,
   .glass-bar,
   .form-card,
   .card {
     position: static !important;
-    width: 90% !important;
+    width: 80% !important;
     max-width: 600px;
     margin-inline: auto;
     margin-block: 2rem;
   }
 
 
-  .glass-bar {
-    top: unset;
-    left: unset;
-    right: unset;
-    bottom: unset;
+ 
+.glass-bar-about{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    width: fit-content;
-    max-width: 100%;
-  }
-
-.card.about-card{
-    position: static;
-    width: 50%;
-    max-width: 80%;
-    margin-inline: auto;
-    padding-right: 0;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    height: fit-content;
+    max-width: 600px;
+    position: relative;
+    top: 5.5%;
+    position: absolute;
+    left: 10%;
 }
-  .about-card ul {
-    padding-left: 0;
-  }
+
+.about-card {
+  border-radius:20px; 
+  padding: 20px; 
+  margin-top: 1rem;
+  margin-left: 30%;
+  border: 3px solid rgba(111, 0, 255, 0.199); 
+  background: rgba(36, 36, 36, 0.281);
+  width: 50%; backdrop-filter: blur(10px);
+}
+.bullets { padding-right: 2rem;color: rgb(200, 180, 255); }
+
 }
 
 
 @media (max-width: 600px) {
-  body {
-    padding: 0.5rem;
-  }
-
-
   .profile-card,
   .card,
-  .form-card,
-  .about-card {
+  .form-card {
     padding: 1.5rem;
     border-radius: 20px;
   }
 
+  .about-card {
+  border-radius:20px; 
+  padding: 20px; 
+  margin-top: 1rem;
+  margin-left: 30%;
+  border: 3px solid rgba(111, 0, 255, 0.199); 
+  background: rgba(36, 36, 36, 0.281);
+  width: 50%; backdrop-filter: blur(10px);
+}
 
   .profile-img {
     width: 80px;
@@ -197,6 +203,7 @@
     flex-direction: column;
     gap: 0.75rem;
   }
+
 
 
   .profile-name {
