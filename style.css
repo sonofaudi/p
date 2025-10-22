@@ -140,27 +140,26 @@
 .glass-bar{
    position: static !important;
     width: 80% !important;
-    max-width: 600px;
+    max-width: none;
     margin-inline: auto;
     margin-block: 2rem;
    display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
  
 .glass-bar-about{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: auto;
     height: fit-content;
-    max-width: 600px;
+    max-width: none;
     position: relative;
     top: 5.5%;
-    position: absolute;
+    position: static ;
     left: 10%;
 }
 
@@ -238,10 +237,49 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 360px) {
+  :root {
+    --gap: 0.75rem;
+  }
 
+  body {
+    padding: 0.25rem;        
+  }
 
+  .glass-bar,
+  .glass-bar-about {
+    padding: 0.6rem 0.8rem;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    flex-wrap: nowrap;
+    width: 80%;
+    max-width: none;
+    height: fit-content;
+  }
 
+  .profile-card,
+  .about-card,
+  .form-card,
+  .card {
+    padding: 1rem;
+    border-radius: 14px;
+  }
 
+  .profile-img {
+    width: 70px;
+    height: 70px;
+  }
 
+  .profile-name   { font-size: 1.1rem; }
+  #liveTime       { font-size: 1rem; letter-spacing: 0.05em; }
+  .about-card h1  { font-size: 1.3rem; }
+  .about-card h2  { font-size: 1rem; }
+  .about-card p,
+  .about-card li  { font-size: 0.85rem; line-height: 1.45; }
 
-
+  #theme-toggle,
+  .glass-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.9rem;
+  }
+}

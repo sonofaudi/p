@@ -18,6 +18,9 @@ body {background: linear-gradient(135deg, #00133f, #000000, #000000);color: #f8f
 
 
 
+
+
+
 @media (max-width: 900px) {
   .about-card {
     margin-left: auto !important;
